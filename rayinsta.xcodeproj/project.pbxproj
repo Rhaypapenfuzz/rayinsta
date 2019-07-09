@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0EB0222C22D3FBD3002179EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0222B22D3FBD3002179EB /* AppDelegate.m */; };
-		0EB0222F22D3FBD3002179EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0222E22D3FBD3002179EB /* ViewController.m */; };
+		0EB0222F22D3FBD3002179EB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0222E22D3FBD3002179EB /* LoginViewController.m */; };
 		0EB0223222D3FBD3002179EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB0223022D3FBD3002179EB /* Main.storyboard */; };
 		0EB0223422D3FBD4002179EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB0223322D3FBD4002179EB /* Assets.xcassets */; };
 		0EB0223722D3FBD4002179EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB0223522D3FBD4002179EB /* LaunchScreen.storyboard */; };
 		0EB0223A22D3FBD4002179EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0223922D3FBD4002179EB /* main.m */; };
 		0EB0224422D3FBD4002179EB /* rayinstaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0224322D3FBD4002179EB /* rayinstaTests.m */; };
 		0EB0224F22D3FBD5002179EB /* rayinstaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0224E22D3FBD5002179EB /* rayinstaUITests.m */; };
+		0EB0226122D4108B002179EB /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0226022D4108B002179EB /* SignUpViewController.m */; };
+		0EB0226422D41A8F002179EB /* HomeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0226322D41A8F002179EB /* HomeFeedViewController.m */; };
+		0EB0226722D52AFA002179EB /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0226622D52AFA002179EB /* Post.m */; };
+		5EB47659A8DC1655852A79AB /* Pods_rayinstaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1971B6FAA36023151F4D83AC /* Pods_rayinstaTests.framework */; };
+		8C5E59AA3986586BA505EC79 /* Pods_rayinsta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65DFE182BA10FE662D899CA /* Pods_rayinsta.framework */; };
+		A64559FB87F1CB8CFC98DDDE /* Pods_rayinstaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2608FF85BB4613E25F393F /* Pods_rayinstaUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B86ABC6454DAEBD7B9FFBC3 /* Pods-rayinstaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rayinstaTests.release.xcconfig"; path = "Target Support Files/Pods-rayinstaTests/Pods-rayinstaTests.release.xcconfig"; sourceTree = "<group>"; };
 		0EB0222722D3FBD3002179EB /* rayinsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rayinsta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB0222A22D3FBD3002179EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0EB0222B22D3FBD3002179EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0EB0222D22D3FBD3002179EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0EB0222E22D3FBD3002179EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0EB0222D22D3FBD3002179EB /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0EB0222E22D3FBD3002179EB /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0EB0223122D3FBD3002179EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EB0223322D3FBD4002179EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EB0223622D3FBD4002179EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,20 @@
 		0EB0224A22D3FBD5002179EB /* rayinstaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rayinstaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB0224E22D3FBD5002179EB /* rayinstaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rayinstaUITests.m; sourceTree = "<group>"; };
 		0EB0225022D3FBD5002179EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EB0225F22D4108B002179EB /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		0EB0226022D4108B002179EB /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		0EB0226222D41A8F002179EB /* HomeFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeFeedViewController.h; sourceTree = "<group>"; };
+		0EB0226322D41A8F002179EB /* HomeFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeFeedViewController.m; sourceTree = "<group>"; };
+		0EB0226522D52AFA002179EB /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		0EB0226622D52AFA002179EB /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		1971B6FAA36023151F4D83AC /* Pods_rayinstaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rayinstaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		402EBC62E08BC54CCB83A6CD /* Pods-rayinsta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rayinsta.release.xcconfig"; path = "Target Support Files/Pods-rayinsta/Pods-rayinsta.release.xcconfig"; sourceTree = "<group>"; };
+		7FC08DFDEEA4EA9B19383171 /* Pods-rayinstaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rayinstaUITests.debug.xcconfig"; path = "Target Support Files/Pods-rayinstaUITests/Pods-rayinstaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B65DFE182BA10FE662D899CA /* Pods_rayinsta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rayinsta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1978E94ED5A4B4CBD7A074F /* Pods-rayinstaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rayinstaTests.debug.xcconfig"; path = "Target Support Files/Pods-rayinstaTests/Pods-rayinstaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3F250EC9A490F8B49E50EDF /* Pods-rayinstaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rayinstaUITests.release.xcconfig"; path = "Target Support Files/Pods-rayinstaUITests/Pods-rayinstaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F69DCE5FBFFED560D8EDBC27 /* Pods-rayinsta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rayinsta.debug.xcconfig"; path = "Target Support Files/Pods-rayinsta/Pods-rayinsta.debug.xcconfig"; sourceTree = "<group>"; };
+		FF2608FF85BB4613E25F393F /* Pods_rayinstaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rayinstaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5E59AA3986586BA505EC79 /* Pods_rayinsta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB47659A8DC1655852A79AB /* Pods_rayinstaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A64559FB87F1CB8CFC98DDDE /* Pods_rayinstaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +109,8 @@
 				0EB0224222D3FBD4002179EB /* rayinstaTests */,
 				0EB0224D22D3FBD5002179EB /* rayinstaUITests */,
 				0EB0222822D3FBD3002179EB /* Products */,
+				E16ADE11823AE353B69680BC /* Pods */,
+				EF901B7BE43753654AF685B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +129,15 @@
 			children = (
 				0EB0222A22D3FBD3002179EB /* AppDelegate.h */,
 				0EB0222B22D3FBD3002179EB /* AppDelegate.m */,
-				0EB0222D22D3FBD3002179EB /* ViewController.h */,
-				0EB0222E22D3FBD3002179EB /* ViewController.m */,
+				0EB0222D22D3FBD3002179EB /* LoginViewController.h */,
+				0EB0222E22D3FBD3002179EB /* LoginViewController.m */,
+				0EB0225F22D4108B002179EB /* SignUpViewController.h */,
+				0EB0226022D4108B002179EB /* SignUpViewController.m */,
 				0EB0223022D3FBD3002179EB /* Main.storyboard */,
+				0EB0226222D41A8F002179EB /* HomeFeedViewController.h */,
+				0EB0226322D41A8F002179EB /* HomeFeedViewController.m */,
+				0EB0226522D52AFA002179EB /* Post.h */,
+				0EB0226622D52AFA002179EB /* Post.m */,
 				0EB0223322D3FBD4002179EB /* Assets.xcassets */,
 				0EB0223522D3FBD4002179EB /* LaunchScreen.storyboard */,
 				0EB0223822D3FBD4002179EB /* Info.plist */,
@@ -132,6 +164,29 @@
 			path = rayinstaUITests;
 			sourceTree = "<group>";
 		};
+		E16ADE11823AE353B69680BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F69DCE5FBFFED560D8EDBC27 /* Pods-rayinsta.debug.xcconfig */,
+				402EBC62E08BC54CCB83A6CD /* Pods-rayinsta.release.xcconfig */,
+				F1978E94ED5A4B4CBD7A074F /* Pods-rayinstaTests.debug.xcconfig */,
+				0B86ABC6454DAEBD7B9FFBC3 /* Pods-rayinstaTests.release.xcconfig */,
+				7FC08DFDEEA4EA9B19383171 /* Pods-rayinstaUITests.debug.xcconfig */,
+				F3F250EC9A490F8B49E50EDF /* Pods-rayinstaUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF901B7BE43753654AF685B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B65DFE182BA10FE662D899CA /* Pods_rayinsta.framework */,
+				1971B6FAA36023151F4D83AC /* Pods_rayinstaTests.framework */,
+				FF2608FF85BB4613E25F393F /* Pods_rayinstaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EB0225322D3FBD5002179EB /* Build configuration list for PBXNativeTarget "rayinsta" */;
 			buildPhases = (
+				3EC372F1A7A8D9D3661CE608 /* [CP] Check Pods Manifest.lock */,
 				0EB0222322D3FBD3002179EB /* Sources */,
 				0EB0222422D3FBD3002179EB /* Frameworks */,
 				0EB0222522D3FBD3002179EB /* Resources */,
+				4AD3E6F1F43107E0AB7B688D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EB0225622D3FBD5002179EB /* Build configuration list for PBXNativeTarget "rayinstaTests" */;
 			buildPhases = (
+				F024AD427359A155B0E1AF00 /* [CP] Check Pods Manifest.lock */,
 				0EB0223B22D3FBD4002179EB /* Sources */,
 				0EB0223C22D3FBD4002179EB /* Frameworks */,
 				0EB0223D22D3FBD4002179EB /* Resources */,
@@ -174,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EB0225922D3FBD5002179EB /* Build configuration list for PBXNativeTarget "rayinstaUITests" */;
 			buildPhases = (
+				65BE73F26FE4A9D4F244913A /* [CP] Check Pods Manifest.lock */,
 				0EB0224622D3FBD5002179EB /* Sources */,
 				0EB0224722D3FBD5002179EB /* Frameworks */,
 				0EB0224822D3FBD5002179EB /* Resources */,
@@ -257,13 +316,102 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EC372F1A7A8D9D3661CE608 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rayinsta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AD3E6F1F43107E0AB7B688D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rayinsta/Pods-rayinsta-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rayinsta/Pods-rayinsta-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rayinsta/Pods-rayinsta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65BE73F26FE4A9D4F244913A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rayinstaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F024AD427359A155B0E1AF00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rayinstaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0EB0222322D3FBD3002179EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EB0222F22D3FBD3002179EB /* ViewController.m in Sources */,
+				0EB0226422D41A8F002179EB /* HomeFeedViewController.m in Sources */,
+				0EB0226722D52AFA002179EB /* Post.m in Sources */,
+				0EB0222F22D3FBD3002179EB /* LoginViewController.m in Sources */,
 				0EB0223A22D3FBD4002179EB /* main.m in Sources */,
+				0EB0226122D4108B002179EB /* SignUpViewController.m in Sources */,
 				0EB0222C22D3FBD3002179EB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +581,7 @@
 		};
 		0EB0225422D3FBD5002179EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F69DCE5FBFFED560D8EDBC27 /* Pods-rayinsta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +599,7 @@
 		};
 		0EB0225522D3FBD5002179EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 402EBC62E08BC54CCB83A6CD /* Pods-rayinsta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -467,6 +617,7 @@
 		};
 		0EB0225722D3FBD5002179EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1978E94ED5A4B4CBD7A074F /* Pods-rayinstaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +637,7 @@
 		};
 		0EB0225822D3FBD5002179EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B86ABC6454DAEBD7B9FFBC3 /* Pods-rayinstaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -505,6 +657,7 @@
 		};
 		0EB0225A22D3FBD5002179EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FC08DFDEEA4EA9B19383171 /* Pods-rayinstaUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7R4TAWA36;
@@ -523,6 +676,7 @@
 		};
 		0EB0225B22D3FBD5002179EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F250EC9A490F8B49E50EDF /* Pods-rayinstaUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7R4TAWA36;

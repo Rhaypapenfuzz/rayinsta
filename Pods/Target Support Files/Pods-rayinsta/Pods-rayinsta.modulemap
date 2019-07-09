@@ -1,0 +1,6 @@
+framework module Pods_rayinsta {
+  umbrella header "Pods-rayinsta-umbrella.h"
+
+  export *
+  module * { export * }
+}
