@@ -127,21 +127,9 @@
 		0EB0222922D3FBD3002179EB /* rayinsta */ = {
 			isa = PBXGroup;
 			children = (
-				0EB0222A22D3FBD3002179EB /* AppDelegate.h */,
-				0EB0222B22D3FBD3002179EB /* AppDelegate.m */,
-				0EB0222D22D3FBD3002179EB /* LoginViewController.h */,
-				0EB0222E22D3FBD3002179EB /* LoginViewController.m */,
-				0EB0225F22D4108B002179EB /* SignUpViewController.h */,
-				0EB0226022D4108B002179EB /* SignUpViewController.m */,
-				0EB0223022D3FBD3002179EB /* Main.storyboard */,
-				0EB0226222D41A8F002179EB /* HomeFeedViewController.h */,
-				0EB0226322D41A8F002179EB /* HomeFeedViewController.m */,
-				0EB0226522D52AFA002179EB /* Post.h */,
-				0EB0226622D52AFA002179EB /* Post.m */,
-				0EB0223322D3FBD4002179EB /* Assets.xcassets */,
-				0EB0223522D3FBD4002179EB /* LaunchScreen.storyboard */,
 				0EB0223822D3FBD4002179EB /* Info.plist */,
-				0EB0223922D3FBD4002179EB /* main.m */,
+				0EB0226822D54213002179EB /* View Controllers */,
+				0EB0226922D5424F002179EB /* Models */,
 			);
 			path = rayinsta;
 			sourceTree = "<group>";
@@ -162,6 +150,34 @@
 				0EB0225022D3FBD5002179EB /* Info.plist */,
 			);
 			path = rayinstaUITests;
+			sourceTree = "<group>";
+		};
+		0EB0226822D54213002179EB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0EB0226222D41A8F002179EB /* HomeFeedViewController.h */,
+				0EB0226322D41A8F002179EB /* HomeFeedViewController.m */,
+				0EB0222D22D3FBD3002179EB /* LoginViewController.h */,
+				0EB0222E22D3FBD3002179EB /* LoginViewController.m */,
+				0EB0225F22D4108B002179EB /* SignUpViewController.h */,
+				0EB0226022D4108B002179EB /* SignUpViewController.m */,
+				0EB0226522D52AFA002179EB /* Post.h */,
+				0EB0226622D52AFA002179EB /* Post.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0EB0226922D5424F002179EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0EB0222A22D3FBD3002179EB /* AppDelegate.h */,
+				0EB0222B22D3FBD3002179EB /* AppDelegate.m */,
+				0EB0223022D3FBD3002179EB /* Main.storyboard */,
+				0EB0223322D3FBD4002179EB /* Assets.xcassets */,
+				0EB0223522D3FBD4002179EB /* LaunchScreen.storyboard */,
+				0EB0223922D3FBD4002179EB /* main.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E16ADE11823AE353B69680BC /* Pods */ = {
