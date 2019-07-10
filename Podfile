@@ -7,6 +7,7 @@ target 'rayinsta' do
 
   # Pods for rayinsta
 	pod 'Parse'
+  pod 'AFNetworking'
   target 'rayinstaTests' do
     inherit! :search_paths
     # Pods for testing

@@ -10,7 +10,7 @@
 #import "Parse/Parse.h"
 
 static NSString *const signUpSegueIdentifier = @"signUpSegue";
-
+static NSString *const loginSegueIdentifier = @"loginSegue";
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
@@ -39,6 +39,7 @@ static NSString *const signUpSegueIdentifier = @"signUpSegue";
         if (error != nil) {
             NSLog(@"User log in failed: %@", error.localizedDescription);
         } else {
+            [self performSegueWithIdentifier: loginSegueIdentifier sender:nil]; //performs segue to login if user is valid
             NSLog(@"User logged in successfully");
             
             // display view controller that needs to shown after successful login
@@ -51,7 +52,7 @@ static NSString *const signUpSegueIdentifier = @"signUpSegue";
 }
 
 - (IBAction)loginButtonAction:(id)sender {
-        [self loginUser];
+        [self loginUser]; //calls the parse login authentication method to verify user
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

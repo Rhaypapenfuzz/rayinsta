@@ -28,7 +28,9 @@
     [Parse initializeWithConfiguration:config];
     
     // Code to initialize Parse
+    
    
+    //persistent login feature
     if (PFUser.currentUser) {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         
