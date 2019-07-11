@@ -63,5 +63,8 @@ static NSString *const registerBackToLoginSegueIdentifier = @"registerBackToLogi
         }
     }];
 }
+- (IBAction)tapOutsideTextFieldAction:(id)sender {
+     [self.view endEditing:YES];
+}
 
 @end

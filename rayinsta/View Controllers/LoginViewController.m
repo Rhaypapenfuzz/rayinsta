@@ -5,7 +5,6 @@
 //  Created by rhaypapenfuzz on 7/8/19.
 //  Copyright © 2019 rhaypapenfuzz. All rights reserved.
 //
-
 #import "LoginViewController.h"
 #import "Parse/Parse.h"
 
@@ -29,11 +28,12 @@ static NSString *const loginSegueIdentifier = @"loginSegue";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
 }
+
 - (void)loginUser {
     NSString *username = self.usernameField.text;
     NSString *password = self.passwordField.text;
+    
     
     [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser * user, NSError *  error) {
         if (error != nil) {
@@ -61,6 +61,9 @@ static NSString *const loginSegueIdentifier = @"loginSegue";
         
     }
     
+}
+- (IBAction)tapOutsideTextFieldAction:(id)sender {
+     [self.view endEditing:YES];
 }
 
 @end

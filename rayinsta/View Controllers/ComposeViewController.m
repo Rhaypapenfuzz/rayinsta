@@ -28,6 +28,7 @@
 
 
 - (IBAction)imageTapAction:(id)sender {
+    
     //Instantiating a UIImagePickerController
     UIImagePickerController *imagePickerVC = [UIImagePickerController new];
     imagePickerVC.delegate = self;
