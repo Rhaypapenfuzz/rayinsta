@@ -7,8 +7,13 @@
 //
 
 #import "InstaCell.h"
+#import "Post.h"
 
 @implementation InstaCell
+- (IBAction)likesButton:(id)sender {
+}
+- (IBAction)commentButton:(id)sender {
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -20,5 +25,6 @@
 
     // Configure the view for the selected state
 }
+
 
 @end

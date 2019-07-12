@@ -17,6 +17,7 @@
 @dynamic caption;
 @dynamic likeCount;
 @dynamic commentCount;
+@dynamic favorited;
 
 + (nonnull NSString *)parseClassName {
     return @"Post";

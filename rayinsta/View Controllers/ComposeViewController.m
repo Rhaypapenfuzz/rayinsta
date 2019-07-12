@@ -9,6 +9,7 @@
 #import "ComposeViewController.h"
 #import "Post.h"
 #import "HomeFeedViewController.h"
+#import "MBProgressHUD.h"
 
 @interface ComposeViewController () < UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (strong, nonatomic) UIImage *resizedPhoto;
@@ -105,9 +106,12 @@
 }
 
 - (IBAction)shareButtonAction:(id)sender{
-    [Post postUserImage: self.resizedPhoto withCaption: self.captionText.text withCompletion:nil];
+  [Post postUserImage: self.resizedPhoto withCaption: self.captionText.text withCompletion:nil];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES]; //initiate HUD
     
-    //[self.instaView reloadData]; //reload tableView with new post
     [self dismissViewControllerAnimated:true completion:nil];
+    
+     [MBProgressHUD hideHUDForView:self.view animated:YES]; ///terminate HUD
 }
+
 @end

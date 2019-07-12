@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Post.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface InstaCell : UITableViewCell
-
+@property (nonatomic, strong) Post *post; //refactor usign your tweet object/class
 @property (weak, nonatomic) IBOutlet UILabel *authorNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *likesCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *captionLabel;
@@ -22,12 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIButton *likesButton;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
-/*
- userID
- @property (nonatomic, strong) NSString *postID;
- PFUser author ;
- PFUser *author;
-*/
+
 
 @end
 

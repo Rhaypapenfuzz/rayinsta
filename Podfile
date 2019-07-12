@@ -8,6 +8,9 @@ target 'rayinsta' do
   # Pods for rayinsta
 	pod 'Parse'
   pod 'AFNetworking'
+  pod 'DateTools'
+  pod 'MBProgressHUD'
+
   target 'rayinstaTests' do
     inherit! :search_paths
     # Pods for testing

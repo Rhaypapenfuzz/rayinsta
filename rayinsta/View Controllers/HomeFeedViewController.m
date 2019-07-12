@@ -9,18 +9,21 @@
 #import "HomeFeedViewController.h"
 #import "Parse/Parse.h"
 #import "LoginViewController.h"
+#import "PostDetailsViewController.h"
 #import "AppDelegate.h"
 #import "Post.h"
 #import "InstaCell.h"
 #import "UIImageView+AFNetworking.h"
 
-@interface HomeFeedViewController () <UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
-
+@interface HomeFeedViewController () <UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *instaView;
 - (IBAction)LogoutButtonAction:(id)sender;
 @property (nonatomic, strong) NSMutableArray *InstaPostsArray;
 @property(nonatomic, strong) UIRefreshControl *refreshControl;
+@property (assign, nonatomic) BOOL isMoreDataLoading;
+//@property (nonatomic, strong) NSArray<Post*> *InstaPosts;
+
 @end
 
 @implementation HomeFeedViewController
@@ -45,14 +48,15 @@
     
     // construct query
     PFQuery *query = [PFQuery queryWithClassName:@"Post"];
+    [query includeKey:@"author"];
     [query orderByDescending:@"createdAt"];
-    query.limit = 20;
+    query.limit = 4;
 
     // fetch data asynchronously
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
         if (posts != nil) {
             // do something with the array of object returned by the call
-             self.InstaPostsArray = [NSMutableArray arrayWithArray:posts];
+            self.InstaPostsArray = posts; //[NSMutableArray arrayWithArray:posts];
             [self.instaView reloadData]; //reloads tableView
         } else {
             NSLog(@"%@", error.localizedDescription);
@@ -92,12 +96,11 @@
     
     
     cell.captionLabel.text = post.caption;
-    //cell.authorNameLabel.text = [NSString stringWithFormat:@"%@", post.author.username];
-    cell.likesCountLabel.text = [NSString stringWithFormat:@"%@%s", post.likeCount, " likes"];
 
-    //NSString *date = post.createdAt;
-    //cell.dateLabel.text = date;
-    // NSLog(@"%@", message);
+    cell.authorNameLabel.text = post.author.username;
+    cell.likesCountLabel.text = [NSString stringWithFormat:@"%@%s", post.likeCount, " likes"];
+    
+    //add tap gesture on label programatically
 
     return cell;
     
@@ -108,6 +111,64 @@
     return self.InstaPostsArray.count;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"detailsViewSegue"]){
+        UITableViewCell *tappedCell = sender;
+        NSIndexPath *indexPath = [self.instaView indexPathForCell:tappedCell];
+        PostDetailsViewController *detailsViewController = [segue destinationViewController];
+        Post *post = self.InstaPostsArray[indexPath.row];
+        detailsViewController.instaPost = post;
+    }
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if(!self.isMoreDataLoading){
+        // Calculate the position of one screen length before the bottom of the results
+        int scrollViewContentHeight = self.instaView.contentSize.height;
+        int scrollOffsetThreshold = scrollViewContentHeight - self.instaView.bounds.size.height;
+        
+        // When the user has scrolled past the threshold, start requesting
+        if(scrollView.contentOffset.y > scrollOffsetThreshold && self.instaView.isDragging) {
+            self.isMoreDataLoading = true;
+            [self loadMoreData];
+        }
+    }
+}
+
+-(void)loadMoreData{
+    
+    // ... Create (myRequest) ...
+    // construct query
+    PFQuery *query = [PFQuery queryWithClassName:@"Post"];
+    [query includeKey:@"author"];
+    [query orderByDescending:@"createdAt"];
+    query.limit = 4;
+    
+    Post *post = self.InstaPostsArray[self.InstaPostsArray.count - 1];
+    NSDate *dateOfMyLastPost = post.createdAt;
+    
+    [query whereKey:@"createdAt" lessThan: dateOfMyLastPost];
+    
+    // fetch data asynchronously
+    [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
+        if ([posts count] != 0) {
+            // do something with the array of object returned by the call
+            self.InstaPostsArray = [self.InstaPostsArray arrayByAddingObjectsFromArray:posts];
+           
+            //self.InstaPostsArray = [NSMutableArray arrayWithArray:posts];
+
+            // Update flag
+            self.isMoreDataLoading = false;
+            [self.instaView reloadData]; //reloads tableView
+        }
+        else {
+            NSLog(@"%@", error.localizedDescription);
+        }
+        [self.refreshControl endRefreshing];
+    }];
+
+
+}
 
 
 @end

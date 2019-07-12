@@ -22,6 +22,7 @@
 		0EB0226722D52AFA002179EB /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0226622D52AFA002179EB /* Post.m */; };
 		0EB0227022D5521C002179EB /* InstaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0226F22D5521C002179EB /* InstaCell.m */; };
 		0EB92C5522D7322500EAEDBB /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB92C5422D7322500EAEDBB /* ProfileViewController.m */; };
+		0EB92C5E22D7F03B00EAEDBB /* ProfileViewCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB92C5D22D7F03B00EAEDBB /* ProfileViewCollectionCell.m */; };
 		5EB47659A8DC1655852A79AB /* Pods_rayinstaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1971B6FAA36023151F4D83AC /* Pods_rayinstaTests.framework */; };
 		8C5E59AA3986586BA505EC79 /* Pods_rayinsta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65DFE182BA10FE662D899CA /* Pods_rayinsta.framework */; };
 		A64559FB87F1CB8CFC98DDDE /* Pods_rayinstaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2608FF85BB4613E25F393F /* Pods_rayinstaUITests.framework */; };
@@ -76,6 +77,8 @@
 		0EB0226F22D5521C002179EB /* InstaCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaCell.m; sourceTree = "<group>"; };
 		0EB92C5322D7322500EAEDBB /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		0EB92C5422D7322500EAEDBB /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		0EB92C5C22D7F03B00EAEDBB /* ProfileViewCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewCollectionCell.h; sourceTree = "<group>"; };
+		0EB92C5D22D7F03B00EAEDBB /* ProfileViewCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewCollectionCell.m; sourceTree = "<group>"; };
 		1971B6FAA36023151F4D83AC /* Pods_rayinstaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rayinstaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		402EBC62E08BC54CCB83A6CD /* Pods-rayinsta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rayinsta.release.xcconfig"; path = "Target Support Files/Pods-rayinsta/Pods-rayinsta.release.xcconfig"; sourceTree = "<group>"; };
 		7FC08DFDEEA4EA9B19383171 /* Pods-rayinstaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rayinstaUITests.debug.xcconfig"; path = "Target Support Files/Pods-rayinstaUITests/Pods-rayinstaUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 			children = (
 				0EB0226E22D5521C002179EB /* InstaCell.h */,
 				0EB0226F22D5521C002179EB /* InstaCell.m */,
+				0EB92C5C22D7F03B00EAEDBB /* ProfileViewCollectionCell.h */,
+				0EB92C5D22D7F03B00EAEDBB /* ProfileViewCollectionCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -457,6 +462,7 @@
 				0EB0223A22D3FBD4002179EB /* main.m in Sources */,
 				0EB0226122D4108B002179EB /* SignUpViewController.m in Sources */,
 				0EB0222C22D3FBD3002179EB /* AppDelegate.m in Sources */,
+				0EB92C5E22D7F03B00EAEDBB /* ProfileViewCollectionCell.m in Sources */,
 				0EB92C5522D7322500EAEDBB /* ProfileViewController.m in Sources */,
 				0E555E4B22D5610E000C4712 /* ComposeViewController.m in Sources */,
 				0E555E5922D654D1000C4712 /* HomeFeedViewController.m in Sources */,
