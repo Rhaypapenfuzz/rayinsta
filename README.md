@@ -2,7 +2,7 @@
 
 **rayInsta** is a photo sharing app using Parse as its backend.
 
-Time spent: **X** hours spent in total
+Time spent: **20** hours spent in total
 
 ## User Stories
 
@@ -36,18 +36,22 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
+1. I added the tap gestures outside the textfield to help dismiss the keypad
+2. I set the image to let the user see the image they chose before posting
+3. I made the login text field test disappear when user starts typing for convenience
+4. I made the infinite scroll bring the post in order of time in which they were posted.
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. I will like to discuss the purpose of the dynamic properties used in Post.m
+2. I will also like to discuss how parse helps us manage our database
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
+<img src='http://g.recordit.co/6POfbMQVaR.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
+<img src='http://g.recordit.co/zaY3qqQMee.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Credits
