@@ -50,7 +50,7 @@
     PFQuery *query = [PFQuery queryWithClassName:@"Post"];
     [query includeKey:@"author"];
     [query orderByDescending:@"createdAt"];
-    query.limit = 4;
+    query.limit = 6;
 
     // fetch data asynchronously
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
